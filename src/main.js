@@ -1,10 +1,11 @@
 // src/main.js
 import Vue from 'vue';
 import App from './App.vue';
-import store from '../src/store/store.js';
+import router from '../src/router/router';
+import store from '../src/store/store';
 
 new Vue({
-  el: '#app',
+  router,
   store,
   render: h => h(App)
-});
+}).$mount('#app');
